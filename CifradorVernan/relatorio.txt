@@ -1,0 +1,16 @@
+Como será feita a geração da chave?
+A chave gerada deve ser aleatória e ter no mínimo o mesmo tamanho da mensagem.
+Foi gerado um vetor com um valor random até 61 para cada posição do vetor.
+Foi utilizado XOR com o valor de cada indice desse vetor com o valor de cada indice da mensagem,
+gerando assim a mensagem criptografada.
+
+O algoritmo de Vernam é vulnerável à análise de frequências?
+Não é vulnerável, porque a chave sempre é gerada aleatoriamente.
+
+RC4:
+Existência de uma larga classe de chaves consideradas fracas, onde uma pequena porção dos bits da chave
+determinam um grande número de bits da pertumação inicial S.
+
+Fraqueza do Vetor e inicialização (IV weakness): se um atacante conhecer parte da chave (IV), ele é capaz
+de rederivar a parte secreta da chave analizando o byte inicial do fluxo de byte de saída do RC4 com
+(relativo) pouco esforço.
